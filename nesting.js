@@ -50,7 +50,40 @@ var employees = [
     3. Return the updated employee array.
 */
 
-//Code Here
+function employeeUpdater(){
+
+  employees.map(function(employee, i){
+    if (employee.firstName === "Theo"){
+      employees.splice(i,1);
+
+    }
+    if (employee.firstName === "Lorie"){
+
+      employees[i].department = 'HR'
+    }
+  })
+  return employees;
+}
+// console.log(employees)
+// function employeeUpdater(){
+//   console.log(employees)
+//   for (let key in employees) {
+//     console.log(1)
+//     if (employees[key].firstName === "Theo"){
+//       console.log(employees)
+//       delete employees[key]
+//       console.log(employees)
+//       console.log(2)
+//     }
+//     if (employees[key].firstName === "Lorie"){
+//       employees.department = 'HR'
+//       console.log(3)
+//     }
+    
+//   }
+//   console.log('next'+employees)
+//   return employees;
+// }
 
 
 
